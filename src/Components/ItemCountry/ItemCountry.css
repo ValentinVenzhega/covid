@@ -4,8 +4,9 @@
   border-radius: 10px;
   margin-bottom: 65px;
   text-align: center;
-  background: #1a273a;
-  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  background-color: var(--cart-background);
+  box-shadow: 12px 29px 81px 0px var(--cart-background-shadow);
+  transition: background-color 250ms linear, box-shadow 250ms linear;
 }
 
 .cart-item__title {
@@ -27,9 +28,11 @@
 }
 
 .cart-item__content-item {
-  color: rgb(145, 133, 133);
+  color: var(--cart-color);
+  transition: color 300ms linear;
 }
 
 .cart-item__content_color {
-  color: #f8e6e6;
+  color: var(--cart-value);
+  transition: color 400ms linear;
 }
